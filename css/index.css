@@ -1,0 +1,26 @@
+/* body */
+
+body {
+    color: white;
+    background-image: url(../assets/images/wp1.gif);
+    background-size: cover;
+    font-family: "Roboto";
+}
+
+
+
+/* bas de page */
+
+footer {
+    margin-top: 2vh; /* Adjusted to be responsive to viewport height */
+    background-color: #373737;
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 2vh; /* Adjusted to be responsive to viewport height */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 5vh; /* Adjusted to be responsive to viewport height */
+  }

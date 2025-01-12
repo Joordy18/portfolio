@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #48633ad2;
+    --secondary-color: #373737;
+    --text-color: white;
+    --title-color: #f5f1ee;
+    --font-family: "Roboto";
+  }
+  
+  body {
+    line-height: 1;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--primary-color);
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--title-color);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    text-transform: uppercase;
+  }
+  
+  .main {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  
+  .content {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Add this line */
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    line-height: 40px;
+  }
+  
+  #logo img {
+    border-radius: 15%; /* Makes the image circular */
+    margin: auto;
+    width: 40vh; /* Adjusted to be responsive to viewport height */
+    padding-top: 1vh; /* Adjusted to be responsive to viewport height */
+    box-shadow: 0px 1vh 1.5vh rgba(0, 0, 0, 0.1); /* Adjusted to be responsive to viewport height */
+    transition: transform 0.3s ease; /* Prepares the image for a transform animation */
+  }
+  
+  #logo img:hover {
+    transform: scale(1.05); /* Scales the image up slightly when hovered */
+  }
+  
+  #logo h2 {
+    padding-top: 1vh; /* Adjusted to be responsive to viewport height */
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 2vh; /* Adjusted to be responsive to viewport height */
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 2vh; /* Adjusted to be responsive to viewport height */
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin: 5vh; /* Adjusted to be responsive to viewport height */
+    font-weight: 500;
+  }
+  
+  #texte {
+    width: 100%;
+    line-height: 3vh; /* Adjusted to be responsive to viewport height */
+    font-weight: 600;
+  }
+  
+  footer {
+    margin-top: 2vh; /* Adjusted to be responsive to viewport height */
+    background-color: #373737;
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 2vh; /* Adjusted to be responsive to viewport height */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 5vh; /* Adjusted to be responsive to viewport height */
+  }
